@@ -24,30 +24,46 @@ export const Card = ({
 export const JournalCard = ({
     cover = '',
     name= '',
+    e_issn= '',
+    p_issn= '',
     date= '',
-    key,
+    id,
     color = 'white',
     link = 'https://journal.westscience-press.com'
 }) => {
     return (
-        <div className={`bg-${color} flex flex-col items-center p-2 max-w-sm w-full lg:max-w-full lg:flex lg:flex-row lg:p-0 rounded-xl`}>
-            <div key={key} className="m-0 w-2/5 shrink-0 ">
+        <div key={id} className={`bg-${color} flex flex-col shadow-spread items-center p-2 max-w-sm w-full lg:max-w-full lg:flex lg:flex-row lg:p-0 rounded-xl`}>
+            <div className="m-0 w-2/5 shrink-0 ">
+                    <Link href={link}>
                         <div className='relative rounded-xl w-[160px] h-[220px]'>
                             <Image src={cover} alt="cover" layout="fill" objectFit="cover"/>
                         </div>
+                    </Link>
                     </div>
                     <div className=' xl:px-4 flex flex-col justify-center'>
-                        <div className="text-center text-base font-medium capitalize mb-3 lg:text-left">
+                        <div className="mt-4 text-center text-lg font-medium capitalize leading-none mb-2 lg:text-base lg:mt-0 lg:text-left">
                             {name}
                         </div>
-                        <div className="text-center text-sm font-medium mb-1 lg:text-left">
-                            published:
+                        <div className="flex flex-row justify-center lg:justify-start">
+                            <div className="text-center text-sm font-medium lg:text-left">e-ISSN:</div>
+                            <div className="text-center text-sm font-normal ml-2 lg:text-left">
+                                {e_issn}
+                            </div>
                         </div>
-                        <div className="text-center text-sm font-normal mb-4 lg:text-left">
+                        <div className="flex flex-row justify-center lg:justify-start">
+                            <div className="text-center text-sm font-medium lg:text-left">p-ISSN:</div>
+                            <div className="text-center text-sm font-normal ml-2 lg:text-left">
+                                {p_issn}
+                            </div>
+                        </div>
+                        <div className="text-center text-sm font-medium mt-2 lg:text-left">
+                            Published:
+                        </div>
+                        <div className="text-center text-sm font-normal leading-none lg:text-left">
                             { date }    
                         </div>
                         <Link href={link}>
-                            <div className="group flex flex-row items-center justify-center gap-2 cursor-pointer lg:justify-start">
+                            <div className="mt-4 pb-4 group flex flex-row items-center justify-center gap-2 cursor-pointer lg:justify-start lg:pb-0">
                                 <div className='text-sm font-medium text-blue-600 group-hover:text-blue-300'>Learn More</div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

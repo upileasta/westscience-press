@@ -86,6 +86,8 @@ export default function Home() {
 								link={journal.link}
                                 date={journal.date}
                                 name={journal.name}
+                                e_issn={journal.e_issn}
+                                p_issn={journal.p_issn}
 							/>
 						)
 				})}
@@ -102,7 +104,9 @@ export default function Home() {
 								link={journal.link}
                                 date={journal.date}
                                 name={journal.name}
-                                color='blue-50'
+                                e_issn={journal.e_issn}
+                                p_issn={journal.p_issn}
+                                color='white'
 							/>
 						)
 				})}
