@@ -71,7 +71,7 @@ export const internationalJournals = [
                 name: "West Science Information System and Technology",
                 date: "April, August, December",
                 e_issn: "3025-5120", 
-                p_issn: "-",
+                p_issn: "3026-1120",
             },
             {
                 id: 7,
@@ -79,8 +79,8 @@ export const internationalJournals = [
                 cover: wsnt,
                 name: "West Science Nature and Technology",
                 date: "March, June, September, and December",
-                e_issn: "-", 
-                p_issn: "-",
+                e_issn: "3026-1430", 
+                p_issn: "3026-6599",
             },
             {
                 id: 8,
@@ -88,7 +88,7 @@ export const internationalJournals = [
                 cover: wsiss,
                 name: "West Science Islamic Studies",
                 date: "January, April, July, and October",
-                e_issn: "-", 
+                e_issn: "3026-5606", 
                 p_issn: "-",
             },
             {
@@ -107,7 +107,7 @@ export const internationalJournals = [
                 name: "West Science Social and Humanities Studies",
                 date: "Every Month",
                 e_issn: "3025-3764", 
-                p_issn: "-",
+                p_issn: "3026-1651",
             },
         ]
 

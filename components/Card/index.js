@@ -27,12 +27,11 @@ export const JournalCard = ({
     e_issn= '',
     p_issn= '',
     date= '',
-    id,
     color = 'white',
     link = 'https://journal.westscience-press.com'
 }) => {
     return (
-        <div key={id} className={`bg-${color} flex flex-col shadow-spread items-center p-2 max-w-sm w-full lg:max-w-full lg:flex lg:flex-row lg:p-0 rounded-xl`}>
+        <div className={`bg-${color} flex flex-col shadow-spread items-center p-2 max-w-sm w-full lg:max-w-full lg:flex lg:flex-row lg:p-0 rounded-xl`}>
             <div className="m-0 w-2/5 shrink-0 ">
                     <Link href={link}>
                         <div className='relative rounded-xl w-[160px] h-[220px]'>
